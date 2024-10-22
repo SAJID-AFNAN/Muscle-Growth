@@ -213,7 +213,8 @@ body {
 .run-content {
     width: 50%;
 }
-.run-content .param{
+
+.run-content .param {
     margin-top: 14px;
     margin-bottom: 30px;
 }
@@ -237,4 +238,100 @@ body {
     width: 70%;
     height: 280px;
     border-radius: 18px;
+}
+
+
+/* BMI Section */
+.bmi-title {
+    background-color: #000;
+    text-align: center;
+    padding: 70px 0px;
+}
+
+.bmi-title .param {
+    margin-top: 14px;
+}
+
+#bmi-section {
+    padding: 50px 0;
+    background-color: #333;
+}
+
+.bmi-grid {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.sub-title {
+    font-size: 28px;
+    font-weight: 900;
+    text-align: left;
+}
+
+.bmi-chart table {
+    border-collapse: collapse;
+    margin-top: 40px;
+}
+
+.bmi-chart table,
+th,
+td {
+    border: 1px solid #444;
+}
+
+th {
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+td {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+    padding: 12px;
+    text-align: left;
+}
+
+.bmi-form {
+    width: calc(60% - 20px);
+    text-align: left;
+}
+
+.bmi-form .param{
+    margin-top: 14px;
+    margin-bottom: 26px;
+}
+
+.input-content {
+    display: flex;
+    gap: 18;
+
+}
+
+.bmi-form input,
+.bmi-form select {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+    padding: 10px 35px 10px 20px;
+    margin: 10px 10px 10px 0px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+}
+
+.bmi-form .btn-primary {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    padding: 12px 30px ;
+    font-weight: 600;
+    text-align: left;
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+    border: none;
+    margin-top: 16px;
 }
