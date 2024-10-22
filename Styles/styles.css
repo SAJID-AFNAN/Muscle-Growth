@@ -1,39 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-/* * {
-    margin: 0;
-    padding: 0;
-    font-family: Inter;
-}
-
-header {
+/* header {
     background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
     
 } */
-
-/* .navber {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    margin: auto;
-    padding: 32px ;
-}
-
-.navber ul {
-    display: flex;
-}
-
-.nav-title {
-    color: rgb(230, 83, 60);
-    font-size: 36px;
-    font-weight: 800;
-}
-
-.nav-link {
-    list-style-type: none;
-} */
-
 
 * {
     margin: 0;
@@ -43,13 +13,15 @@ header {
 
 body {
     font-family: Inter, sans-serif;
-    background-color: #1C1C1C;
+    /* background-color: #1C1C1C; */
     color: white;
 }
 
 .container {
     width: 80%;
     margin: 0 auto;
+    background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
+
 }
 
 /* Hero Section */
@@ -67,18 +39,24 @@ body {
 }
 
 .logo {
-    font-size: 24px;
     font-weight: bold;
-    color: #FF5733;
+    color: rgb(230, 83, 60);
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 800;
 }
 
 .nav-links {
     display: flex;
+    gap: 20px;
+    padding: 4px 10px 4px 0px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
 }
 
 .nav-links li {
     list-style: none;
-    margin: 0 10px;
 }
 
 .nav-links a {
@@ -86,3 +64,99 @@ body {
     text-decoration: none;
 }
 
+.nav-links a[href*="#"] {
+    border-radius: 46px;
+    background: rgb(230, 83, 60);
+    padding: 4px 10px;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.half-content {
+    width: 50%;
+}
+
+.hero-content h1 {
+    margin-bottom: 20px;
+    font-family: Inter;
+    font-size: 78px;
+    font-weight: 900;
+    background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
+}
+
+.shape {
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+    font-style: italic;
+}
+
+.param {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.hero-buttons .btn-primary,
+.btn-secondary {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.btn-primary {
+    background-color: #FF5733;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 42px;
+    color: white;
+}
+
+.video-tutorials {
+    margin-top: 20px;
+}
+
+.free-workout,
+.video-tutorials {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: left;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+    width: fit-content;
+    padding: 12px 14px 14px 14px;
+    position: absolute;
+    left: 1180px;
+    top: 240px;
+}
+
+.free-workout span,
+.video-tutorials span {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.video-tutorials {
+    position: absolute;
+    left: 890px;
+    top: 500px;
+}
