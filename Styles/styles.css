@@ -23,7 +23,7 @@ body {
 }
 
 /* Hero Section */
-.hero-section {
+#hero-section {
     background-color: #000;
     padding: 20px 0;
     text-align: center;
@@ -164,7 +164,8 @@ body {
 .title {
     text-align: center;
 }
-.title .param{
+
+.title .param {
     margin: 14px 0px 50px 0px;
 }
 
@@ -182,13 +183,58 @@ body {
     font-weight: 900;
 }
 
-.habits-section {
+#habits-section {
     padding: 80px 0px 60px 0;
-    background-color: #1C1C1C;
+    background-color: #000;
 }
 
 .habits-grid {
     display: flex;
     justify-content: space-around;
     text-align: center;
+}
+
+/* run an extra mile  */
+#run-section {
+    padding: 40px 0px 30px 0;
+    background-color: #000;
+}
+
+#run-section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    padding: 30px 30px 30px 40px;
+    width: calc(80% - 30px);
+}
+
+.run-content {
+    width: 50%;
+}
+.run-content .param{
+    margin-top: 14px;
+    margin-bottom: 30px;
+}
+
+.btn-run {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 30px;
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+    border: none;
+}
+
+.run-image {
+    width: 50%;
+    text-align: right;
+}
+
+.run-image img {
+    width: 70%;
+    height: 280px;
+    border-radius: 18px;
 }
