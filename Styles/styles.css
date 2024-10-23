@@ -410,13 +410,12 @@ td {
 
 /* Footer */
 footer {
-    background-color: #000;
+    background: rgb(34, 34, 34);
     padding: 20px 0;
     text-align: center;
 }
 
 .footer-content {
-    /* display: flex; */
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     text-align: left;
@@ -431,6 +430,7 @@ footer {
     font-size: 70px;
     font-weight: 800;
     font-style: italic;
+    margin-bottom: 16px;
 }
 
 
@@ -443,8 +443,6 @@ footer {
 
 .footer-links ul {
     list-style: none;
-    /* display: flex;
-    justify-content: center; */
 }
 
 .footer-links ul li {
@@ -455,6 +453,53 @@ footer {
     color: rgba(255, 255, 255, 0.5);
     font-size: 16px;
     font-weight: 400;
-    /* color: white; */
     text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/*Responsive for mobile device (576px) */
+
+@media screen and (max-width:576px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hero-content {
+        display: block;
+    }
+
+    /* .container{
+        width: 80%;
+    } */
+    .half-content {
+        width: 100%;
+    }
+
+    .half-content h1 {
+        font-size: 46px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        font-size: 15px;
+        margin-bottom: 24px;
+    }
+
+    .free-workout,
+    .video-tutorials {
+        padding: 10px 12px 12px 12px;
+        position: absolute;
+        left: 230px;
+        top: 510px;
+    }
+
+    .video-tutorials {
+        position: absolute;
+        left: 40px;
+        top: 680px;
+    }
 }
