@@ -69,6 +69,19 @@ body {
     padding: 4px 10px;
 }
 
+.hide-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hide-icon .bar {
+    width: 28px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
 .hero-content {
     display: flex;
     justify-content: space-between;
@@ -481,6 +494,9 @@ footer {
     margin-bottom: 16px;
 }
 
+.footer-brand .param {
+    width: 90%;
+}
 
 .footer-links h4 {
     color: rgb(255, 255, 255);
@@ -504,9 +520,6 @@ footer {
     text-decoration: none;
 }
 
-.hidden {
-    display: none;
-}
 
 
 /*Responsive for mobile device (576px) */
@@ -518,6 +531,9 @@ footer {
 
     .nav-links {
         display: none;
+    }
+    .hide-icon{
+        display: flex;
     }
 
     .hero-content {
@@ -593,6 +609,51 @@ footer {
     .run-image img {
         width: 100%;
         height: 100%;
+    }
+
+    .bmi-title {
+        padding: 0px 40px 15px;
+        text-align: left;
+    }
+
+    .bmi-grid {
+        flex-direction: column;
+    }
+
+    .sub-title {
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .bmi-form {
+        width: 100%;
+        margin-top: 28px;
+    }
+
+    .bmi-form .btn-primary {
+        width: 50%;
+        text-align: center;
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .stories-container {
+        flex-direction: column;
+    }
+
+    .story {
+        width: 100%;
+    }
+
+    .footer-content {
+        display: block;
+        padding-bottom: 30px;
+    }
+
+    .footer-brand .param {
+        width: 100%;
     }
 
 }
